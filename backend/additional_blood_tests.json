@@ -1,0 +1,76 @@
+{
+  "blood_tests": [
+    {
+      "name": "Ferritine",
+      "unit": "ng/mL",
+      "min": 20,
+      "max": 250,
+      "recommendations": {
+        "low": {
+          "general": "Une ferritine basse peut indiquer une carence en fer ou une anémie.",
+          "food": "Consommez des aliments riches en fer comme le foie, les viandes rouges et les légumes verts à feuilles.",
+          "lifestyle": "Évitez le thé ou le café lors des repas pour améliorer l'absorption du fer."
+        },
+        "high": {
+          "general": "Une ferritine élevée peut indiquer une surcharge en fer ou une inflammation.",
+          "food": "Réduisez la consommation d'aliments riches en fer.",
+          "lifestyle": "Consultez un spécialiste pour dépister une hémochromatose."
+        }
+      }
+    },
+    {
+      "name": "CRP (Protéine C-réactive)",
+      "unit": "mg/L",
+      "min": 0,
+      "max": 10,
+      "recommendations": {
+        "low": {
+          "general": "Un faible niveau est généralement normal et ne nécessite pas d'intervention.",
+          "food": "Aucun ajustement alimentaire requis.",
+          "lifestyle": "Maintenez un mode de vie sain pour prévenir les inflammations."
+        },
+        "high": {
+          "general": "Un niveau élevé peut indiquer une inflammation ou une infection.",
+          "food": "Privilégiez une alimentation anti-inflammatoire (curcuma, fruits rouges, poissons gras).",
+          "lifestyle": "Consultez un médecin pour identifier la cause sous-jacente."
+        }
+      }
+    },
+    {
+      "name": "Vitamine D",
+      "unit": "ng/mL",
+      "min": 20,
+      "max": 50,
+      "recommendations": {
+        "low": {
+          "general": "Un faible taux de vitamine D peut entraîner des problèmes osseux ou immunitaires.",
+          "food": "Augmentez la consommation de poissons gras, d'œufs et de produits laitiers enrichis.",
+          "lifestyle": "Exposez-vous régulièrement au soleil (15-20 minutes par jour)."
+        },
+        "high": {
+          "general": "Un excès de vitamine D est rare mais peut provoquer des effets indésirables.",
+          "food": "Réduisez les suppléments de vitamine D si vous en prenez.",
+          "lifestyle": "Consultez un médecin pour ajuster la supplémentation."
+        }
+      }
+    },
+    {
+      "name": "Acide urique",
+      "unit": "mg/dL",
+      "min": 3.5,
+      "max": 7.2,
+      "recommendations": {
+        "low": {
+          "general": "Un faible taux est généralement bénin mais peut nécessiter un suivi si persistant.",
+          "food": "Privilégiez une alimentation équilibrée sans restrictions particulières.",
+          "lifestyle": "Restez hydraté pour éviter des fluctuations."
+        },
+        "high": {
+          "general": "Un taux élevé peut entraîner la goutte ou des calculs rénaux.",
+          "food": "Évitez les aliments riches en purines (abats, fruits de mer, alcool).",
+          "lifestyle": "Augmentez votre consommation d'eau et maintenez un poids santé."
+        }
+      }
+    }
+  ]
+}

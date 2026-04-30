@@ -1,0 +1,42 @@
+[
+  {
+    "test": "Glucose",
+    "min": 70,
+    "max": 100,
+    "unit": "mg/dL",
+    "above_normal": [
+      "Diabète de type 2",
+      "Syndrome métabolique"
+    ],
+    "below_normal": [
+      "Hypoglycémie"
+    ]
+  },
+  {
+    "test": "Cholesterol",
+    "min": 150,
+    "max": 200,
+    "unit": "mg/dL",
+    "above_normal": [
+      "Hypercholestérolémie"
+    ],
+    "below_normal": [
+      "Hypocholestérolémie"
+    ]
+  },
+  {
+    "test": "Hemoglobin",
+    "min": 12,
+    "max": 16,
+    "unit": "g/dL",
+    "above_normal": [
+      "Polyglobulie"
+    ],
+    "below_normal": [
+      "Anémie",
+      "Carence en vitamine B12"
+    ]
+  }
+]
+
+

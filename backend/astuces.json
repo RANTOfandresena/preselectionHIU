@@ -1,0 +1,115 @@
+{
+  "bien_etre_mental": [
+    {
+      "titre": "Méditation",
+      "contenu": "Prenez 5 minutes par jour pour vous recentrer avec une méditation guidée. Cela réduit le stress et améliore la concentration."
+    },
+    {
+      "titre": "Gratitude",
+      "contenu": "Chaque soir, notez 3 choses positives qui vous sont arrivées dans la journée pour cultiver un état d'esprit positif."
+    },
+    {
+      "titre": "Déconnexion digitale",
+      "contenu": "Fixez des moments sans écran dans votre journée pour reposer votre esprit."
+    },
+    {
+      "titre": "Respiration consciente",
+      "contenu": "Quand vous êtes stressé, respirez profondément en inspirant sur 4 secondes, en retenant votre souffle 4 secondes, et en expirant sur 6 secondes."
+    }
+  ],
+
+  "nutrition": [
+    {
+      "titre": "Hydratation",
+      "contenu": "Commencez votre journée avec un verre d'eau tiède et du citron pour booster votre métabolisme."
+    },
+    {
+      "titre": "Repas équilibrés",
+      "contenu": "Remplissez la moitié de votre assiette avec des légumes pour un repas sain et coloré."
+    },
+    {
+      "titre": "Snacks sains",
+      "contenu": "Privilégiez des encas naturels comme des amandes, des fruits ou du yaourt nature."
+    },
+    {
+      "titre": "Réduction de sucre",
+      "contenu": "Remplacez les boissons sucrées par des infusions ou de l’eau aromatisée naturellement."
+    }
+  ],
+
+  "activite_physique": [
+    {
+      "titre": "Marche quotidienne",
+      "contenu": "Faites au moins 10 minutes de marche après chaque repas pour favoriser la digestion."
+    },
+    {
+      "titre": "Étirements",
+      "contenu": "Commencez votre journée avec 5 minutes d’étirements pour réveiller vos muscles."
+    },
+    {
+      "titre": "Micro-exercices",
+      "contenu": "Intégrez des exercices courts comme des squats ou des pompes pendant vos pauses."
+    },
+    {
+      "titre": "Routine active",
+      "contenu": "Essayez une nouvelle activité physique chaque semaine pour rester motivé (yoga, danse, course)."
+    }
+  ],
+
+  "sommeil": [
+    {
+      "titre": "Routine du coucher",
+      "contenu": "Créez un rituel avant de dormir : lecture, relaxation, ou musique douce pour favoriser un sommeil de qualité."
+    },
+    {
+      "titre": "Pas d’écrans avant le lit",
+      "contenu": "Éteignez vos écrans 1 heure avant le coucher pour préparer votre cerveau à s’endormir."
+    },
+    {
+      "titre": "Sieste courte",
+      "contenu": "Une sieste de 20 minutes après le déjeuner peut rebooster votre énergie."
+    },
+    {
+      "titre": "Lumière naturelle",
+      "contenu": "Exposez-vous à la lumière du jour tôt le matin pour réguler votre horloge biologique."
+    }
+  ],
+  
+  "gestion_du_stress": [
+    {
+      "titre": "Pause respiratoire",
+      "contenu": "Faites une pause de 2 minutes chaque heure pour respirer profondément et relâcher la tension."
+    },
+    {
+      "titre": "Organisation",
+      "contenu": "Planifiez votre journée chaque matin pour réduire l'anxiété liée à l'imprévu."
+    },
+    {
+      "titre": "Nature",
+      "contenu": "Passez du temps à l’extérieur, dans un parc ou un jardin, pour vous reconnecter à la nature."
+    },
+    {
+      "titre": "Musique apaisante",
+      "contenu": "Écoutez une musique relaxante pour vous détendre après une journée chargée."
+    }
+  ],
+  "bien_etre_general": [
+    {
+      "titre": "Grands verres d'eau",
+      "contenu": "Commencez et terminez chaque repas avec un verre d'eau."
+    },
+    {
+      "titre": "Habitudes positives",
+      "contenu": "Remplacez une mauvaise habitude par une action bénéfique, comme lire au lieu de scroller sur votre téléphone."
+    },
+    {
+      "titre": "Journée sans café",
+      "contenu": "Essayez une journée sans café et remplacez-le par du thé vert ou une infusion pour réduire la dépendance à la caféine."
+    },
+    {
+      "titre": "Posture",
+      "contenu": "Adoptez une posture droite lorsque vous êtes assis pour réduire les tensions dans le dos et les épaules."
+    }
+  ]
+}
+

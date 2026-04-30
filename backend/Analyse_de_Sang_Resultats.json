@@ -1,0 +1,192 @@
+[
+    {
+        "Composant": "Globules rouges",
+        "Valeurs Normales": {
+            "min": 4.5,
+            "max": 6,
+            "unit": "millions/µL"
+        },
+        "Problème en cas de taux élevé": "Déshydratation, problèmes pulmonaires, maladies cardiaques",
+        "Problème en cas de taux faible": "Anémie, saignements, troubles de la moelle osseuse"
+    },
+    {
+        "Composant": "Hémoglobine (Hb)",
+        "Valeurs Normales": {
+            "min": 12,
+            "max": 18,
+            "unit": "g/dL"
+        },
+        "Problème en cas de taux élevé": "Problèmes pulmonaires, maladie cardiaque, tabagisme",
+        "Problème en cas de taux faible": "Anémie, carences nutritionnelles"
+    },
+    {
+        "Composant": "Hématocrite",
+        "Valeurs Normales": {
+            "min": 36,
+            "max": 54,
+            "unit": "%"
+        },
+        "Problème en cas de taux élevé": "Déshydratation, maladies cardiaques",
+        "Problème en cas de taux faible": "Anémie, carences nutritionnelles, saignements"
+    },
+    {
+        "Composant": "Globules blancs",
+        "Valeurs Normales": {
+            "min": 4000,
+            "max": 11000,
+            "unit": "/µL"
+        },
+        "Problème en cas de taux élevé": "Infections, inflammations, leucémie",
+        "Problème en cas de taux faible": "Affaiblissement du système immunitaire"
+    },
+    {
+        "Composant": "Plaquettes",
+        "Valeurs Normales": {
+            "min": 150000,
+            "max": 400000,
+            "unit": "/µL"
+        },
+        "Problème en cas de taux élevé": "Risque accru de caillots sanguins",
+        "Problème en cas de taux faible": "Risque de saignements excessifs"
+    },
+    {
+        "Composant": "Sodium (Na)",
+        "Valeurs Normales": {
+            "min": 135,
+            "max": 145,
+            "unit": "mmol/L"
+        },
+        "Problème en cas de taux élevé": "Hypertension, déshydratation",
+        "Problème en cas de taux faible": "Faiblesse musculaire, confusion, convulsions"
+    },
+    {
+        "Composant": "Potassium (K)",
+        "Valeurs Normales": {
+            "min": 3.5,
+            "max": 5,
+            "unit": "mmol/L"
+        },
+        "Problème en cas de taux élevé": "Troubles cardiaques, faiblesse musculaire",
+        "Problème en cas de taux faible": "Fatigue, faiblesse musculaire, risque de paralysie"
+    },
+    {
+        "Composant": "Chlorure (Cl)",
+        "Valeurs Normales": {
+            "min": 95,
+            "max": 105,
+            "unit": "mmol/L"
+        },
+        "Problème en cas de taux élevé": "Déséquilibre acido-basique, déshydratation",
+        "Problème en cas de taux faible": "Fatigue, déshydratation"
+    },
+    {
+        "Composant": "Créatinine",
+        "Valeurs Normales": {
+            "min": 60,
+            "max": 120,
+            "unit": "µmol/L"
+        },
+        "Problème en cas de taux élevé": "Insuffisance rénale, maladies rénales",
+        "Problème en cas de taux faible": "Malnutrition, perte de masse musculaire"
+    },
+    {
+        "Composant": "Azote uréique sanguin",
+        "Valeurs Normales": {
+            "min": 2.5,
+            "max": 7.5,
+            "unit": "mmol/L"
+        },
+        "Problème en cas de taux élevé": "Insuffisance rénale, déshydratation",
+        "Problème en cas de taux faible": "Problèmes hépatiques, malnutrition"
+    },
+    {
+        "Composant": "AST (aspartate aminotransférase)",
+        "Valeurs Normales": {
+            "min": 0,
+            "max": 40,
+            "unit": "U/L"
+        },
+        "Problème en cas de taux élevé": "Atteintes hépatiques, troubles musculaires",
+        "Problème en cas de taux faible": "-"
+    },
+    {
+        "Composant": "ALT (alanine aminotransférase)",
+        "Valeurs Normales": {
+            "min": 0,
+            "max": 40,
+            "unit": "U/L"
+        },
+        "Problème en cas de taux élevé": "Atteintes hépatiques, hépatite",
+        "Problème en cas de taux faible": "-"
+    },
+    {
+        "Composant": "Bilirubine",
+        "Valeurs Normales": {
+            "min": 3,
+            "max": 17,
+            "unit": "µmol/L"
+        },
+        "Problème en cas de taux élevé": "Problèmes hépatiques, obstruction biliaire",
+        "Problème en cas de taux faible": "Anémie"
+    },
+    {
+        "Composant": "Glycémie à jeun",
+        "Valeurs Normales": {
+            "min": 70,
+            "max": 100,
+            "unit": "mg/dL"
+        },
+        "Problème en cas de taux élevé": "Diabète, stress, troubles pancréatiques",
+        "Problème en cas de taux faible": "Hypoglycémie, troubles endocriniens"
+    },
+    {
+        "Composant": "Hémoglobine A1c (HbA1c)",
+        "Valeurs Normales": {
+            "min": 0,
+            "max": 5.7,
+            "unit": "%"
+        },
+        "Problème en cas de taux élevé": "Diabète, prédiabète",
+        "Problème en cas de taux faible": "Hypoglycémie, troubles endocriniens"
+    },
+    {
+        "Composant": "Cholestérol total",
+        "Valeurs Normales": {
+            "min": 0,
+            "max": 200,
+            "unit": "mg/dL"
+        },
+        "Problème en cas de taux élevé": "Risque accru de maladies cardiaques",
+        "Problème en cas de taux faible": "Carence en cholestérol (rare)"
+    },
+    {
+        "Composant": "HDL (bon cholestérol)",
+        "Valeurs Normales": {
+            "min": 40,
+            "max": null,
+            "unit": "mg/dL"
+        },
+        "Problème en cas de taux élevé": "-",
+        "Problème en cas de taux faible": "Risque accru de maladies cardiaques"
+    },
+    {
+        "Composant": "LDL (mauvais cholestérol)",
+        "Valeurs Normales": {
+            "min": 0,
+            "max": 100,
+            "unit": "mg/dL"
+        },
+        "Problème en cas de taux élevé": "Risque accru de maladies cardiaques",
+        "Problème en cas de taux faible": "-"
+    },
+    {
+        "Composant": "Triglycérides",
+        "Valeurs Normales": {
+            "min": 0,
+            "max": 150,
+            "unit": "mg/dL"
+        },
+        "Problème en cas de taux élevé": "Risque accru de maladies cardiaques",
+        "Problème en cas de taux faible": "Malnutrition, carences en énergie"
+    }
+]

@@ -6,48 +6,67 @@ from google import genai
 from google.genai import types
 import os
 from dotenv import load_dotenv
-from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+
+from gemini import tools
 load_dotenv()
 
-@swagger_auto_schema(
-    method='post',
-    operation_description="Génère du contenu avec Gemini AI",
-    request_body=openapi.Schema(
-        type=openapi.TYPE_OBJECT,
-        properties={
-            'contents': openapi.Schema(type=openapi.TYPE_STRING, description='Prompt principal')
-        },
-        required=[]
-    ),
-    responses={
-        200: openapi.Response(
-            description="Réponse IA générée",
-            schema=openapi.Schema(
-                type=openapi.TYPE_OBJECT,
-                properties={
-                    'text': openapi.Schema(type=openapi.TYPE_STRING),
-                    'contents': openapi.Schema(type=openapi.TYPE_STRING),
-                }
-            )
-        )
-    }
-)
-@api_view(['POST'])
-@permission_classes([AllowAny])
-def generate_content(request):
-    prompt = request.data.get('contents') or request.data.get('prompt')
 
+@api_view(['POST'])
+@permission_classes([AllowAny]) # Change en IsAuthenticated pour la production
+def ai_agent_planner(request):
+    user_prompt = request.data.get('contents')
     client = genai.Client(api_key=os.environ.get("GOOGLE_API_KEY"))
+
+    # Instruction système stricte pour guider l'agent
+    sys_instr = """
+    Tu es un assistant de santé intelligent. Ton rôle est de créer des tâches de santé 
+    dans le planning de l'utilisateur en utilisant l'outil 'create_planned_task'. 
+    Analyse le temps libre et suggère des activités (sport, hydratation, repos).
+    """
+
+    # Appel Gemini avec les outils activés
     response = client.models.generate_content(
         model='gemini-3-flash-preview',
-        contents=prompt,
+        contents=user_prompt,
         config=types.GenerateContentConfig(
-            system_instruction="Tu es un expert en informatique. Réponds brièvement."
+            system_instruction=sys_instr,
+            tools=tools,
+            # Force l'IA à utiliser l'outil si nécessaire
         )
     )
 
+    # Extraction de l'appel de fonction
+    function_call = None
+    if response.candidates[0].content.parts:
+        for part in response.candidates[0].content.parts:
+            if part.function_call:
+                function_call = part.function_call
+
+    if function_call:
+        # L'IA a décidé de créer une tâche !
+        # On récupère les arguments générés par l'IA
+        args = function_call.args
+        
+        # Ici, on enregistre REELLEMENT dans la base de données Django
+        from .models import AIPlannedTask
+        task = AIPlannedTask.objects.create(
+            user=request.user, # Assure-toi que l'utilisateur est authentifié
+            title=args['title'],
+            start_time=args['start_time'],
+            end_time=args['end_time'],
+            category=args['category'],
+            priority=args.get('priority', 2),
+            description=args.get('description', ''),
+            ai_generated=True
+        )
+
+        return Response({
+            'message': "L'IA a planifié une nouvelle activité.",
+            'task_id': task.id,
+            'details': args
+        })
+
     return Response({
-        'text': getattr(response, 'text', None) or response,
-        'contents': prompt,
+        'text': response.text,
+        'message': "L'IA n'a pas jugé nécessaire de planifier une tâche."
     })

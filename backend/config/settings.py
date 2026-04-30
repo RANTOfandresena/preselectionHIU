@@ -40,9 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'drf_yasg',
+    #'drf_yasg',
     'gemini',
-    'ai_planner'
+    'ai_planner',
+    'utilisateur'
 ]
 
 
@@ -140,6 +141,6 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'utilisateur.Utilisateur'
-
+GOOGLE_API_KEY='AIzaSyAnzv6-9zFtcQvHhGPb8XrDlDD75ArDOpI'
 
 

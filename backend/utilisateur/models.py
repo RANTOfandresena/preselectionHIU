@@ -7,7 +7,7 @@ class Utilisateur(AbstractUser):
         ('M', 'Male'),
         ('F', 'Female')
     ]
-
+    
     poids = models.FloatField(null=True, blank=True)
     taille = models.FloatField(null=True, blank=True)
     genre = models.CharField(max_length=1, choices=GENRE_CHOICES, null=True, blank=True)

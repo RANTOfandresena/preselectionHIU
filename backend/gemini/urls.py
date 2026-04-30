@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import generate_content
+from .views import ai_agent_planner
 
 urlpatterns = [
-    path("", generate_content, name="ask_gemini"),
+    path("", ai_agent_planner, name="ask_gemini"),
 ]

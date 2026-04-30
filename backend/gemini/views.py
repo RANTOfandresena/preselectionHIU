@@ -8,6 +8,7 @@ import os
 from dotenv import load_dotenv
 
 from gemini import tools
+from utilisateur.models import Utilisateur
 load_dotenv()
 
 
@@ -30,8 +31,7 @@ def ai_agent_planner(request):
         contents=user_prompt,
         config=types.GenerateContentConfig(
             system_instruction=sys_instr,
-            tools=tools,
-            # Force l'IA à utiliser l'outil si nécessaire
+            tools=tools.tools,  # <--- Ajoute .tools pour accéder à la LISTE dans le module
         )
     )
 
@@ -50,7 +50,7 @@ def ai_agent_planner(request):
         # Ici, on enregistre REELLEMENT dans la base de données Django
         from .models import AIPlannedTask
         task = AIPlannedTask.objects.create(
-            user=request.user, # Assure-toi que l'utilisateur est authentifié
+            user = Utilisateur(id=1),# user=request.user,
             title=args['title'],
             start_time=args['start_time'],
             end_time=args['end_time'],
